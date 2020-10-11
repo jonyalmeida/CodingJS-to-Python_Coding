@@ -12,3 +12,20 @@ parrotTrouble(true, 6) → true
 parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
 '''
+
+
+def parrot_trouble(talking, hour):
+    if talking and (hour < 7 or hour > 20):
+        return True
+    return False
+
+
+print(f'{parrot_trouble(True, 6)} → True ✔')
+print(f'{parrot_trouble(True, 7)} → False ✔')
+print(f'{parrot_trouble(False, 6) } → False ✔')
+print(f'{parrot_trouble(True, 21) } → True ✔')
+print(f'{parrot_trouble(False, 21)} → False ✔')
+print(f'{parrot_trouble(True, 23) } → True ✔')
+print(f'{parrot_trouble(False, 23)} → False ✔')
+print(f'{parrot_trouble(True, 20) } → False ✔')
+print(f'{parrot_trouble(False, 12)} → False ✔')
